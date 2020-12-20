@@ -1,0 +1,2 @@
+# generated reports should not be version controlled
+*.pdf

@@ -1,0 +1,15 @@
+\usepackage{fancyvrb,newverbs}
+
+\definecolor{bgcolor}{HTML}{DADADA}
+\let\oldtexttt\texttt
+
+\renewcommand{\texttt}[1]{
+  \colorbox{bgcolor}{\oldtexttt{#1}}
+}
+
+\hypersetup{
+    bookmarksopen=true,
+    linkcolor=blue,
+    urlcolor=NavyBlue,
+    filecolor=magenta,
+}
