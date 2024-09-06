@@ -13,6 +13,7 @@ all: $(REPORT)
 	pandoc $< \
 		-H head.tex \
 		--toc \
+		--number-sections \
 		-V geometry:a4paper \
 		-V linkcolor:blue \
 		-V geometry:margin=2.5cm \
