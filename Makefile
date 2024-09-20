@@ -4,7 +4,7 @@
 
 REPORT := report.pdf
 
-.PHONY: all clean
+.PHONY: all clean watch
 
 all: $(REPORT)
 
@@ -22,3 +22,9 @@ all: $(REPORT)
 
 clean:
 	rm -f $(REPORT)
+
+watch:
+	while true; do \
+		$(MAKE); \
+		inotifywait -qre close_write *.md *.tex ; \
+	done
